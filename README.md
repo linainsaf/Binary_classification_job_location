@@ -27,22 +27,26 @@ Finally, we split our dataset into train, validation and test sets  :
 
 Feature engineering is one of the most important steps in machine learning. It is the process of using domain knowledge of the data to create features that make machine learning algorithms work. Focusing first on our data will give us better results than focusing only on models. Feature engineering helps us to create better data which helps the model understand it well and provide reasonable results.
 
-![Naive Bayes Figure](screenshots/naivebayes.png)
+![Feature Engineering](screenshots/feature-engineering-for-nlp-18-1024.jpg)
 
 In this step, raw text data will be transformed into feature vectors and new features will be created using the existing dataset. We will try to implement  different ideas in order to obtain relevant features from our dataset. Here are some feature extraction techniques for NLP:
 
    - Bag of Words : The bag-of-words model is a simplifying representation used in NLP. In this model, a text is represented as the bag of its words, disregarding grammar and even word order but keeping multiplicity.
-   
-   ![Naive Bayes Figure](screenshots/naivebayes.png)
-     
- 
+    <p align="center">
+    <img src="https://github.com/linainsaf/Binary_classification_job_location/blob/main/screenshots/bag_words.png" width="500" height="300">
+    </p>
+
    - TF-IDF : is short for term frequency–inverse document frequency. It’s designed to reflect how important a word is to a document in a collection or corpus. The TF-IDF value increases proportionally to the number of times a word appears in the document and is offset by the number of documents in the corpus that contain the word, which helps to adjust for the fact that some words appear more frequently in general.
-    
-  ![Naive Bayes Figure](screenshots/naivebayes.png)
+ 
+     <p align="center">
+      <img src="https://github.com/linainsaf/Binary_classification_job_location/blob/main/screenshots/tf_idf.png" width="500" height="300">
+     </p>
     
    - Word2vec : is a group of related models that are used to produce word embeddings. It takes as its input a large corpus of text and produces a vector space, typically of several hundred dimensions, with each unique word in the corpus being assigned a corresponding vector in the space. Word vectors are positioned in the vector space such that words that share common contexts in the corpus are located in close proximity to one another in the space.
-
-   ![Naive Bayes Figure](screenshots/naivebayes.png)
+   
+   <p align="center">
+    <img src="https://github.com/linainsaf/Binary_classification_job_location/blob/main/screenshots/word2vec.png" width="500" height="300">
+   </p>
 
     
 <br/>
@@ -61,7 +65,7 @@ The final step in the text classification framework is to train a classifier usi
     
   We got the following results : 
   
-  ![Naive Bayes Figure](screenshots/naivebayes.png)
+  ![Naive Bayes Figure](screenshots/results.png)
 
   
   
@@ -78,4 +82,13 @@ In the folder app we find three function :
 -  main: in main we can make our predictions with a models of our choosing.
 
 The code is flexible gives possibility to do ani text classification we wanted just by changing the input variables. 
-  
+
+If we want to train a new model, 
+- We gather Data put them in the Data folder.
+- Clean the Dataset using cleaning if needed.
+- Train the model with the function algo : We modify our code to use the model wanted, here we gave an example for SVM but many other Models are available in scikit-learn library, we can train multiple models to compare them and use the best one. The trained models are going to be saved in Models automatically. 
+- Make predictions using main function : Here we can use our trained model to make new predictions. 
+ 
+If we want to use the model available,
+- We give as input the data that we want to predict, the data must be text, a job description. We pass the data to the predict function inside the main, and we get the results.  
+
