@@ -1,7 +1,7 @@
 # Binary classification for detecting job location from it's description
 <br/>
 
-In this project we are using SVM binary classification for selecting a job location from it's description. Whether a job is restricted to United states only or not.
+In this project we are using SVM binary classification for selecting a job location from it's description. More precisely, whether a job is restricted to United states only or not.
 
 An end-to-end text classification pipeline is composed of three main components:
 <br/>
@@ -73,7 +73,7 @@ The final step in the text classification framework is to train a classifier usi
   
 # How the code works 
 
-  We have 3 main folders and two txt files that contains the requirement (the models needed) to execute the code. In our Data folder without any surpises we find the data needed to train our model. In the folder Models  we find all the trained models that we wanted to save. The Data folder isn't available for confidential reasons. 
+  We have 3 main folders and two txt files that contains the requirement (the models needed) to execute the code. In our Data folder we find the data needed to train our model. In the folder Models  we find all the trained models that we wanted to save. The Data folder isn't available for confidential reasons. 
   
 
 In the folder app we find three function : 
@@ -85,7 +85,7 @@ The code is flexible gives possibility to do ani text classification we wanted j
 
 If we want to train a new model, 
 - We gather Data put them in the Data folder.
-- Clean the Dataset using cleaning if needed.
+- Clean the Dataset using the function cleaning if needed.
 - Train the model with the function algo : We modify our code to use the model wanted, here we gave an example for SVM but many other Models are available in scikit-learn library, we can train multiple models to compare them and use the best one. The trained models are going to be saved in Models automatically. 
 - Make predictions using main function : Here we can use our trained model to make new predictions. 
  
