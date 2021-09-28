@@ -1,3 +1,12 @@
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Binary classification for detecting job location from it's description](#binary-classification-for-detecting-job-location-from-its-description)
+  - [Dataset Preparation | Cleaning and Analysis](#dataset-preparation-cleaning-and-analysis)
+  - [Feature Engineering | Transform text to number](#feature-engineering-transform-text-to-number)
+  - [Model Training](#model-training)
+ - [How the code works](#how-the-code-works)
+
 # Binary classification for detecting job location from it's description
 <br/>
 
@@ -7,7 +16,7 @@ An end-to-end text classification pipeline is composed of three main components:
 <br/>
 
 
-## Dataset Preparation ( Cleaning and Analysis ) 
+## Dataset Preparation: Cleaning and Analysis 
 <br/>
 
 The first step is the dataset preparation, in our case we are going to work with the job description as input and the column us-only as labels. After that, we perform basic text pre-processing to the inputs, we notice here that our job description is an html code of the webpage of the job. So, we need to fix that, we need a cleaning function in order to extract clean text from it.
@@ -21,7 +30,7 @@ Finally, we split our dataset into train, validation and test sets  :
 
 <br/>
 
-## Feature Engineering ( Transform text to number ) 
+## Feature Engineering: Transform text to number 
 
 <br/>
 
